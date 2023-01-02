@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Mikhail Zhuk" />
+    <meta name="description" content="Contact information for My Funko Shop." />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="icon" href="img/1267244272.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Contact Us</h1>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#collection">Collection</a></li>
+          <li><a href="/hours.html">Store</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <figure>
+        <img
+          src="img/f246f2_d24623abfb4247d7bc4e4c83b51e96eb_mv2.jpg"
+          alt="Rock Band Queen Funko Pops"
+          title="Queen Funko Pops"
+          width="1000"
+        />
+        <figcaption class="offscreen">Funko Collection!</figcaption>
+      </figure>
+    </section>
+    <main>
+      <section>
+        <h2>Our Contact Form</h2>
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Send Us A Message</legend>
+            <p>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="your name"
+                required
+              />
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your email"
+                required
+              />
+            </p>
+            <p>
+              <label for="message">Your Message:</label>
+              <br />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Type your messge here..."
+              ></textarea>
+            </p>
+          </fieldset>
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+      <section>
+        <h2>Our Location</h2>
+        <address>
+          Grodno, Belarus
+          <p>
+            Phone:
+            <a href="tel:+555-555-5555">555-555-5555</a>
+          </p>
+        </address>
+      </section>
+      <a href="#">Back to Top</a>
+    </main>
+    <footer>
+      <p>Coryright &copy; My Funko Shop</p>
+    </footer>
+  </body>
+</html>

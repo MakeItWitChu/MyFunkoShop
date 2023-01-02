@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Nunito+Sans&family=Open+Sans:wght@400;700&family=Orbitron:wght@400;800&family=Press+Start+2P&display=swap');
+/* || RESET */
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    max-width: 100%;
+    max-height: auto;
+}
+input, button, textarea{
+    font: inherit;
+}
+/* || VARIABLES */
+:root{
+   /* FONTS */ 
+   --FF: "Nunito Sans", sans-serif;
+   --FF-HEADINGS: "Press Start 2P", cursive;
+   --FS: clamp(1rem, 2.2vh, 1.5rem);
+   /* COLORS */ 
+   --BGCOLOR: lightblue;
+   --BGCOLOR-FADE:rgb(98, 177, 204);
+   --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
+   --BODY-BGCOLOR:#fff;
+   --FONT-COLOR:#000;
+}
+/* || UTILITY CLASSES */
+.offscreen{
+    position: absolute;
+    left: -1000px;
+}
+.nowrap{
+    white-space: nowrap;
+}
+.center{
+    text-align: center;
+}
