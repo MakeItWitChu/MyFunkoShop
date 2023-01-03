@@ -9,10 +9,11 @@
     <title>Work Hours</title>
     <link rel="icon" href="img/1267244272.jpg" />
     <link rel="stylesheet" href="style.css" />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <h1 class="header__h1">My Funko Shop Work Hours</h1>
+      <h1 class="header__h1">Work Hours</h1>
       <nav class="header__nav">
         <ul class="header__ul">
           <li><a href="/">Home</a></li>
@@ -34,19 +35,23 @@
       </figure>
     </section>
     <hr />
-    <main>
-      <p>We are open 7 days a week!</p>
-      <dl>
-        <dt>Monday-Friday</dt>
-        <dd>18:00 - 22:00</dd>
-        <dt>Saturday - Sunday</dt>
-        <dd>11:00 - 22:00</dd>
-      </dl>
-      <a href="#">Back to Top</a>
+    <main class="main">
+      <article class="main__article">
+        <h2>Hours</h2>
+        <p>We are open 7 days a week!</p>
+        <dl>
+          <dt>Monday-Friday</dt>
+          <dd>18:00 - 22:00</dd>
+          <dt>Saturday - Sunday</dt>
+          <dd>11:00 - 22:00</dd>
+        </dl>
+      </article>
     </main>
-    <hr />
-    <footer>
-      <p>Coryright &copy; My Funko Shop</p>
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">My Funko Shop</span>
+      </p>
     </footer>
   </body>
 </html>

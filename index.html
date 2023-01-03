@@ -9,10 +9,11 @@
     <title>My Funko Shop</title>
     <link rel="icon" href="img/1267244272.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <h1 class="header__h1">Welcome to My Funko Shop!</h1>
+      <h1 class="header__h1">My Funko Shop!</h1>
       <nav class="header__nav">
         <ul class="header__ul">
           <li><a href="#collection">Collection</a></li>
@@ -34,78 +35,69 @@
         <figcaption class="offscreen">Funko Shop!</figcaption>
       </figure>
     </section>
-    <main>
-      <article id="about">
-        <h2>About Funko</h2>
-        <p>
-          Funko Inc. &#128512;&#128512;&#128512; is an American company that
-          manufactures licensed and limited pop culture collectibles, best known
-          for its licensed vinyl figurines and bobbleheads. In addition, the
-          company produces licensed plush, action figures, apparel, accessories
-          and games.
-        </p>
-        <aside>
-          <h3>Funko Trivia</h3>
-          <details>
-            <summary>
-              Guess <strong>best</strong> funko pop of
-              <time datetime="2022">2022</time>
-            </summary>
-            <img
-              src="img/19_ef24025c-ddca-462c-a32d-5a828d3bb71c_1024x.webp"
-              alt="funko pop luke skywalker with lightsaber"
-              title="Best Funko Pop of 2022"
-              width="1000"
-            />
-          </details>
-        </aside>
-      </article>
-      <hr />
-      <article id="collection">
-        <h2>Our Collection</h2>
-        <table>
-          <caption>
+    <main class="main">
+      <article id="collection" class="main__article collection">
+        <h2 class="collection__h2">Our Collection</h2>
+        <table class="collection__container">
+          <caption class="offscreen">
             Our Funko Pops
           </caption>
           <thead>
-            <th scope="col">Funkos</th>
-            <th scope="col">Name</th>
-            <th scope="col">Price</th>
+            <th class="collection__header" scope="col">Funkos</th>
+            <th class="collection__header" scope="col">Name</th>
+            <th class="collection__header" scope="col">Price</th>
           </thead>
           <tbody>
             <tr>
-              <th scope="row" rowspan="2">Bobblehead</th>
-              <td>Mandalorian with Grogu</td>
-              <td>$12</td>
+              <th
+                class="collection__item collection__bh"
+                scope="row"
+                rowspan="2"
+              >
+                Bobblehead
+              </th>
+              <td class="collection__item">Mandalorian with Grogu</td>
+              <td class="collection__item">$12</td>
             </tr>
             <tr>
-              <td>Luke Skywalker</td>
-              <td>$22</td>
+              <td class="collection__item">Luke Skywalker</td>
+              <td class="collection__item">$22</td>
             </tr>
             <tr>
-              <th scope="row" rowspan="2">Vinyl</th>
-              <td>Jurgen Klopp</td>
-              <td>$12</td>
+              <th
+                class="collection__item collection__vl"
+                scope="row"
+                rowspan="2"
+              >
+                Vinyl
+              </th>
+              <td class="collection__item">Jurgen Klopp</td>
+              <td class="collection__item">$12</td>
             </tr>
             <tr>
-              <td>Freddie Mercury</td>
-              <td>$25</td>
+              <td class="collection__item">Freddie Mercury</td>
+              <td class="collection__item">$25</td>
             </tr>
           </tbody>
           <tfoot>
             <tr>
-              <td colspan="2">Total price:</td>
-              <td>$71</td>
+              <td class="collection__item collection__cs" colspan="2">
+                Total price:
+              </td>
+              <td class="collection__item">$71</td>
             </tr>
           </tfoot>
         </table>
+        <p class="center">
+          <a href="#">Back to Top</a>
+        </p>
       </article>
-      <br />
-      <a href="#">Back to Top</a>
     </main>
-    <hr />
-    <footer>
-      <p>Coryright &copy; My Funko Shop</p>
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">My Funko Shop</span>
+      </p>
     </footer>
   </body>
 </html>
